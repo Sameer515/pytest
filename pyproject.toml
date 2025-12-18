@@ -1,0 +1,17 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "snyk-repro-initial"
+version = "0.1.0"
+description = "Reproduction: Initial state"
+authors = ["Your Name <you@example.com>"]
+package-mode = false  # <--- ADD THIS LINE
+
+[tool.poetry.dependencies]
+python = "^3.9"
+langchain-core = "*" 
+requests = "*"
+python-dotenv = "*"
+pydantic = "*"
